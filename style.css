@@ -1,0 +1,177 @@
+:root {
+  --kolor-tlo: #FFF6D6;
+  --kolor-tekst: #1B1B1B;
+  --kolor-akcent: #C8321C;
+  --kolor-niebieski: #2F5BEA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--kolor-tlo);
+  color: var(--kolor-tekst);
+  font-family: system-ui, sans-serif;
+}
+
+section {
+  border-bottom: 3px solid var(--kolor-tekst);
+}
+
+.kontener {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+#sekcja-1 .kontener {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+#sekcja-1 a {
+  color: var(--kolor-tekst);
+}
+
+#sekcja-1 .pasek {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+#sekcja-1 .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+#sekcja-1 .logo-znak {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--kolor-akcent);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#sekcja-1 .logo-nazwa {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#sekcja-1 .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-weight: 500;
+}
+
+#sekcja-1 .menu a:hover {
+  color: var(--kolor-akcent);
+}
+
+#sekcja-1 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+#sekcja-1 .hero-tekst {
+  flex: 999 1 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#sekcja-1 .plakietka {
+  background: var(--kolor-niebieski);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+#sekcja-1 h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+#sekcja-1 .wyroznienie {
+  color: var(--kolor-akcent);
+}
+
+#sekcja-1 p {
+  margin: 0;
+  font-size: 20px;
+  max-width: 34rem;
+}
+
+#sekcja-1 .przyciski {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#sekcja-1 .przycisk {
+  display: inline-block;
+  padding: 14px 24px;
+  border: 3px solid var(--kolor-tekst);
+  border-radius: 12px;
+  background: var(--kolor-akcent);
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+#sekcja-1 .przycisk:hover {
+  transform: translateY(-3px);
+}
+
+#sekcja-1 .przycisk-jasny {
+  background: #FFFFFF;
+  color: var(--kolor-tekst);
+}
+
+#sekcja-1 .hero-obrazek {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#sekcja-1 .skarpetka {
+  width: 150px;
+  height: auto;
+}
+
+#sekcja-1 .puste-miejsce {
+  width: 150px;
+  height: 206px;
+  border: 3px dashed var(--kolor-tekst);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
